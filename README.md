@@ -59,3 +59,25 @@ This project involves querying a PostgreSQL database with historical data from W
   - Year and team name of all World Cup champions.
   - Teams whose names start with "Co".
 ---
+# [Universe Database](https://github.com/your_repository)
+
+
+This project is a PostgreSQL database that contains detailed information about the universe, including galaxies, stars, planets, moons, and asteroids. The database structure allows you to store and retrieve data related to various celestial bodies and their properties, such as their distance from Earth, age, type, and other characteristics.
+
+## Features
+- **Galaxy Data**: Information about galaxies, including their type, distance from Earth, and whether they support life.
+- **Star Data**: Details about stars, including their type, age, and whether they are spherical.
+- **Planet Data**: Data about planets, including their type, whether they support life, and their associated stars.
+- **Moon Data**: Information about moons, including their age, shape, and the planets they orbit.
+- **Asteroid Data**: Includes asteroids' names, distance from Earth, and whether they are spherical.
+- **Relational Structure**: 
+  - Moons are linked to planets via foreign keys.
+  - Planets are linked to stars, and stars are linked to galaxies, allowing for a hierarchical structure of the universe.
+
+## Usage
+1. **Setup the Database**:
+   - Use the provided SQL dump to set up the `universe` database. You can run the following command to import the data:
+     ```bash
+     psql --username=freecodecamp --dbname=universe < universe.sql
+     ```
+---
