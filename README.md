@@ -40,3 +40,22 @@ This project is a command-line appointment scheduler for a salon, built using Ba
 - **Appointment Scheduling**: After selecting a service, the customer can specify a preferred time for the appointment.
 - **Error Handling**: If a user selects an invalid service or provides incorrect information, the script prompts them to try again.
 ---
+
+# [World Cup Database Analysis](https://github.com/borisTL/worldcup/blob/main/insert_data.sh)
+
+
+This project involves querying a PostgreSQL database with historical data from World Cup tournaments. It includes Bash scripts that handle data import from CSV files and execute queries to retrieve statistics, such as the number of goals, teams, and match results.
+
+ Features
+- **Data Import**: The script reads data from a CSV file (`games.csv`) and populates the `teams` and `games` tables in the PostgreSQL database.
+- **Data Queries**:
+  - Total goals scored by winning teams.
+  - Total goals scored by both teams in all games.
+  - Average goals per game (for both winning teams and overall).
+  - Most goals scored by a team in a single game.
+  - Winner of the 2018 tournament.
+  - Teams that participated in the 2014 Eighth-Final.
+  - List of unique teams that won at least one game.
+  - Year and team name of all World Cup champions.
+  - Teams whose names start with "Co".
+---
